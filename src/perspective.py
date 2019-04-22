@@ -197,7 +197,7 @@ def correct_perspective(img, threshold_max=140,
 
   # ------------- compute corners ------------
   corners = get_corners(lines, intersections)
-  print "number of corners: ", len(corners)
+  print("number of corners: ", len(corners))
   if intermediate:
     corners_annotated = Image.fromarray(annotate_corners(lines_annotated, corners))
 
